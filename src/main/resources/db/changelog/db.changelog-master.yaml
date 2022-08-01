@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/scripts/user_init.sql
+  - include:
+      file: db/changelog/scripts/update_user_picture.sql
+  - include:
+      file: db/changelog/scripts/add_user_status_to_user.sql
