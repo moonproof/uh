@@ -33,9 +33,7 @@ public class UserController {
             @ApiResponse(responseCode = "200", description = "Успешное получение юзера", content = {
                     @Content(mediaType = "application/json", schema = @Schema(implementation = UserResponseDto.class))
             }),
-            @ApiResponse(responseCode = "404", description = "Юзер не существует", content = {
-                    @Content(mediaType = "application/json", schema = @Schema(implementation = ApiError.class))
-            })
+            @ApiResponse(responseCode = "404", description = "Юзер не существует")
     })
     @GetMapping("/{id}")
     public Object getUser(@PathVariable long id) {
